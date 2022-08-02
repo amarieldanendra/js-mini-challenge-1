@@ -1,5 +1,20 @@
 function pizzaMozarella(score) {
   // Tulis kodingan dibawah ini
+
+  for (let i=1; i<=score; i++){
+    if(i%3 === 0){
+      console.log("Pizza");
+    }
+    else if(i%5 === 0){
+      console.log("Mozarella");
+    }
+    else if (i%3 === 0 && i%5 ===0){
+      console.log("PizzaMozarella");
+    }
+    else{
+      console.log(i);
+    }
+  }
   result = 'Pizza';
   return result;
 }
